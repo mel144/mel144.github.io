@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<header>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet"> <!-- find icons here: https://material.io/tools/icons/?style=baseline -->
+  <!-- Bootstrap   -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+</header>
+<title>RecyCats</title>
+<html>
+<body>
+  <div id="screen">
+    <div class="head-bar">
+      <div class="back-button">
+        <a href="HomePage.html"><i class="material-icons">arrow_back</i></a>
+        <span class="logo">RecyCats</span>
+        <a href="HomePage.html"><i class="material-icons" style="margin-left: 55px;">home</i></a>
+      </div>
+    </div>
+    <i class="material-icons" style="color: black; margin-left: 15px; margin-top: 10px;">search</i>
+    <input type="text" placeholder="Search specific item" class="text-box" id="searchBar" onkeypress="search()">
+    <div style="font-size: 30px; font-weight: bolder; margin-left: 25px;" id="itemName">
+      Aluminum
+    </div>
+    <div style="margin-left: 35px; height: 120px;" id="itemInfo">
+      Go U northwestern, break right through that line. With our colors flying we will cheer you all the time, u-ra-ra, go u northwestern fight for victory. Spread far the fame of our fair name, go northwestern win that game!
+    </div>
+    <img src="images/map08.png" class="small-map" onclick="mapClick('item')" id="itemMap" />
+  </div>
+
+  <script src="backEnd.js"></script>
+</body>
+</html>
+<!--
+* bg iphone img is 363x762px
+* iphone 'screen' is apprx 300x530 -->

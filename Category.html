@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<header>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet"> <!-- find icons here: https://material.io/tools/icons/?style=baseline -->
+  <!-- Bootstrap   -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+</header>
+<title>RecyCats</title>
+<html>
+<body>
+  <div id="screen">
+    <div class="head-bar">
+      <div class="back-button">
+        <a href="HomePage.html"><i class="material-icons">arrow_back</i></a>
+        <span class="logo">RecyCats</span>
+        <a href="HomePage.html"><i class="material-icons" style="margin-left: 55px;">home</i></a>
+      </div>
+    </div>
+    <i class="material-icons" style="color: black; margin-left: 15px; margin-top: 10px;">search</i>
+    <input type="text" placeholder="Search specific item" class="text-box" id="searchBar" onkeypress="search()">
+    <table class="info-table-6">
+      <tr>
+        <td class="info-table-cell"> <img src="images/error.png" class="info-table-cell" id="first" onclick="updateCategory(0)"/></td>
+        <td class="info-table-cell"> <img src="images/error.png" class="info-table-cell" id="second" onclick="updateCategory(1)"/></td>
+      </tr>
+      <tr>
+        <td class="info-table-cell"> <img src="images/error.png" class="info-table-cell" id="third" onclick="updateCategory(2)"/></td>
+        <td class="info-table-cell"> <img src="images/error.png" class="info-table-cell" id="fourth" onclick="updateCategory(3)"/></td>
+      </tr>
+      <tr>
+        <td class="info-table-cell"> <img src="images/error.png" class="info-table-cell" id="fifth" onclick="updateCategory(4)"/></td>
+        <td class="info-table-cell"> <img src="images/error.png" class="info-table-cell" id="sixth" onclick="updateCategory(5)"/></td>
+      </tr>
+    </table>
+  </div>
+
+  <script src="backEnd.js"></script>
+</body>
+</html>
+<!--
+* bg iphone img is 363x762px
+* iphone 'screen' is apprx 300x530 -->
