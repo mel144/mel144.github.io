@@ -12,8 +12,21 @@ body {
 	height: 530px;
 	width: 300px;
 	margin: 106px 31px;
-  background-color: #4E6172;
+  background-color: rgb(149, 202, 64);
 }
+
+.paw {
+  width: 40px; 
+  height: 40px;
+}
+
+  .paw:hover {
+    cursor: default;
+  }
+
+  .logo:hover {
+  cursor: default;
+  }
 
 .head-bar {
   display: inline-block;
@@ -22,34 +35,58 @@ body {
   background-color: forestgreen;
   width: 300px;
   height: 45px;
+  align-content: space-around;
+  text-align: center;
+  margin: auto;
 }
 
 .back-button {
+  display: inline-block;
   margin-left: 10px;
-  margin-top: 10px;
+  margin-top: 8px;
+  float: left;
+}
+
+.home-button {
+  float:right;
+  margin-top: 9px;
+  margin-right: 10px;
+  align-self: inherit;
+  width: 24px;
+  height: 24px;
 }
 
 .material-icons {
+  display: inline-block;
   color:white;
 }
 
 .logo {
-  margin-left: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 5px;
 }
 
 
 .search-bar {  
   display: inline-block; 
-  margin-top: 25px;
+  align-self: center;
 }
 
-.text {
-  display: block;
-  margin-top: 15px;
-  font-weight: bold;
-  color: black;
-  margin-left: 8px;
+#search-icon {
+  vertical-align: middle;
+  margin-left: 16px;
 }
+
+.search {
+  align-content: center;
+  vertical-align: middle;
+  margin-top: 5px;
+}
+
+  .search:hover {
+    cursor: default;
+  }
 
 u:hover {
   color:forestgreen;
@@ -69,17 +106,48 @@ u:hover {
 
 .map {
   display:block;
-  margin-left: 12px;
-  width: 275px;
-  height: 430px;
+  width: 100%;
+  height: 84%;
 }
+
+  
+.map:hover {
+  cursor: default;
+  }
+
+
+#tech {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 330px;
+  left: 200px;
+}
+
+  
+#tech:hover {
+  cursor: pointer;
+  }
+
+#directions {
+  width: 275px;
+  height: 40px;
+  position: absolute;
+  top: 540px;
+  left: 45px;
+}
+
+  #directions:hover {
+    cursor: pointer;
+  }
 
 .small-map {
   display: block;
-  margin-left: 12px;
-  margin-top: 10px;
-  width: 275px;
-  height: 260px;
+  position: absolute;
+  top: 337px;
+  left: 30px;
+  width: 300px;
+  height: 300px;
 }
 
 .fun-facts {
@@ -92,13 +160,32 @@ padding-left: 5px;
 
 .text-box {
   align-items: center;
-  width: 230px;
+  width: 79%;
   margin-top: 10px;
+  border-radius: 5px;
+  border-color: darkgreen;
+  border-width: 1px;
+}
+
+.smaller-text {
+  color: white;
+  font-size: 18px;
+  margin-left: 30px;
+  margin-top: 5px;
+  font-style:italic;
+  font-weight: lighter;
 }
 
 .text {
   color: white;
-  font-size: 24px;
+  font-size: 22px;
+  vertical-align: middle;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.text:hover {
+  cursor:default;
 }
 
 .info-table-6{
@@ -115,56 +202,63 @@ padding-left: 5px;
   border-color: black;
 }
 
-.cell {
+.cell-left:hover {
+  cursor: pointer;
+  border-color: black;
+}
+
+.cell-left {
+  display: inline-block;
   background-color: white;
   border-radius: 5px;
   border: 2px solid forestgreen;
   text-align: center;
-  margin-right: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
   width: 120px;
   height: 120px;
+  float: left;  
 }
 
-img:hover {
-cursor:pointer;
+.row {
+  height:25%;
+  width: 100%;
+  align-content: center;
+  vertical-align: middle;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.cell {
+  display: inline-block;
+  background-color: white;
+  border-radius: 5px;
+  border: 2px solid forestgreen;
+  text-align: center;
+  width: 120px;
+  height: 120px;
+  margin-left: 20px;
 }
 
 .btn {
   display: block;
-  margin-top: 40px;
-  width: 250px;
-  height: 50px;
+  width: 87%;
+  height: 80px;
+  margin-left: 18px;
+  margin-top: 25px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 20px;
-  background-color: white;
-  color: forestgreen;
+  color: white;
+  background-color: rgb(42, 135, 49);
   border-radius: 5px;
-  border-color: forestgreen;
+  border-color: white;
   border-width: 2px;
+  vertical-align: middle;
 }
 
   .btn:hover {
     background-color: forestgreen;
-    color: white;
-    border-color: darkgreen;
-  }
-
-/* Bootstrap */
-.row {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-  .row > [class*='col-'] {
-    padding: 20px;
-    border: 2px solid black;
-    display: flex;
-    flex-direction: column;
+    color: rgb(149, 202, 64);
+    border-color: rgb(149, 202, 64);
   }
 
 .padding {

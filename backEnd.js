@@ -7,12 +7,17 @@ var spans = ["one", "two", "three", "four", "five", "six"];
 var itemInfo;
 var categoryType;
 var event;
+var nearMe2 = false;
 
 function init() {
   categoryType = new URLSearchParams(window.location.search);
 
   document.getElementById("screen").onkeydown = function (ev) {
     search(ev.keyCode);
+  }
+
+  if (document.getElementById("directions") != null) {
+    document.getElementById("directions").hidden = true;
   }
 
   if (categoryType.has('type')) {
@@ -42,7 +47,17 @@ function mapClick(currentPage) {
   if (currentPage === 'NearMe') {
     var map = document.getElementById("nearMeMap");
     if (map != null) {
-      map.src = "images/map06.png";
+      map.src = "images/map09.png";
+      document.getElementById("tech").hidden = true;
+      document.getElementById("directions").hidden = false;
+      categoryType = new URLSearchParams("?type=nearMe2");
+    }
+  } else if (currentPage == 'directions') {
+    var map = document.getElementById("nearMeMap");
+    if (map != null) {
+      categoryType = new URLSearchParams("?type=nearMe3");
+      document.getElementById("directions").hidden = true;
+      map.src = "images/directions.jpg";
     }
   }
 }
@@ -57,13 +72,13 @@ function updateCategory(index) {
       window.location.href = "underConstruction.html";
     }
   } else if (type == 'Metal') {
-    if (metals[index] == Aluminum) {
+    if (metals[index] == 'Aluminum') {
       window.location.href = "itemPage.html?item=" + metals[index];
     } else {
       window.location.href = "underConstruction.html";
     }
   } else if (type == 'Uses') {
-    window.location.href = "underConstruction.html";
+    window.location.href = "underConstruction.html?type=" + uses[index];
   }
   else {
     window.location.href = "underConstruction.html?type=" + type;
@@ -91,7 +106,6 @@ function displayItem(hideMap) {
 
 function search(char) {
   var searchText = document.getElementById("searchBar").value;
-
   if (char == 13) {
     if (searchText.search("izza") != -1 ||
       searchText.search("ardboard") != -1 ||
@@ -99,39 +113,51 @@ function search(char) {
 
       window.location.href = "searchResults.html?type=search";
     } else {
-      window.location.href = "underConstruction.html";
+      window.location.href = "underConstruction.html?prev='" + window.location.href + "'";
     }
   }
 }
 
 function goBack() {
-  var type = categoryType.get('type');
+  if (categoryType.has('prev')) {
+    var loc = categoryType.get('prev');
+    window.location.href = loc.substring(1, loc.length - 1);
+  } else {
+    var type = categoryType.get('type');
 
-  switch (type) {
-    case 'Plastic':
-    case "Paper":
-    case "Metal":
-    case "Glass":
-    case "Batteries":
-      console.log("here");
-      window.location.href = "Category.html?type=Material";
-      break
-    case "Electronics":
-    case "Household":
-    case "Garden":
-    case "Automotive":
-    case "Hazardous":
-    case "Food Containers":
-      window.location.href = "Category.html?type=Uses";
-      break;
-    case "Aluminum":
-    case "Brass":
-    case "Copper":
-    case "Steel":
-    case "Zinc":
-      window.location.href = "Category.html?type=Metal";
-    default:
-      window.location.href = "HomePage.html";
+    switch (type) {
+      case 'Plastic':
+      case "Paper":
+      case "Metal":
+      case "Glass":
+      case "Batteries":
+        console.log("here");
+        window.location.href = "Category.html?type=Material";
+        break
+      case "Electronics":
+      case "Household":
+      case "Garden":
+      case "Automotive":
+      case "Hazardous":
+      case "Food Containers":
+        window.location.href = "Category.html?type=Uses";
+        break;
+      case "Aluminum":
+      case "Brass":
+      case "Copper":
+      case "Steel":
+      case "Zinc":
+        window.location.href = "Category.html?type=Metal";
+        break;
+      case "nearMe2":
+        window.location.href = "NearMe.html?type=nearMe";
+        break;
+      case "nearMe3":
+        mapClick('NearMe');
+        break;
+      default:
+        window.location.href = "HomePage.html";
+    }
   }
 }
 

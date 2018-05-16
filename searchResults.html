@@ -10,13 +10,16 @@
 <html>
 <body>
   <div id="screen">
-    <div class="head-bar">
-      <div class="back-button">
-        <a href="#" onclick="goBack()"><i class="material-icons">arrow_back</i></a>
-        <span class="logo">RecyCats</span>
-        <a href="HomePage.html"><i class="material-icons" style="margin-left: 55px;">home</i></a>
+      <div class="head-bar">
+        <div class="back-button">
+          <a href="#" onclick="goBack()"><i class="material-icons">arrow_back</i></a>
+        </div>
+        <div class="logo">
+          <img class="paw" src="images/paw2.png" />
+          <span>RecyCats</span>
+        </div>
+        <a href="HomePage.html" class="home-button"><i class="material-icons">home</i></a>
       </div>
-    </div>
     <i class="material-icons" style="color: black; margin-left: 15px; margin-top: 10px;">search</i>
     <input type="text" placeholder="Search specific item" class="text-box" id="searchBar" onkeypress="search()">
     <a href="ItemPage.html?item=pizzabox">
