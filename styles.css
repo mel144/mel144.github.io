@@ -62,6 +62,7 @@ body {
 }
 
 .logo {
+  color:white;
   display: inline-block;
   vertical-align: middle;
   margin-top: 5px;
@@ -136,6 +137,18 @@ u:hover {
   top: 540px;
   left: 45px;
 }
+
+#bigArrow {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 530px;
+  left: 255px;
+}
+
+  #bigArrow:hover {
+    cursor: pointer;  
+  }
 
   #directions:hover {
     cursor: pointer;
@@ -246,7 +259,7 @@ padding-left: 5px;
   margin-left: 18px;
   margin-top: 25px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 20px;
+  font-size: 40px;
   color: white;
   background-color: rgb(42, 135, 49);
   border-radius: 5px;

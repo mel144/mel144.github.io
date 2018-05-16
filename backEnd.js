@@ -161,4 +161,8 @@ function goBack() {
   }
 }
 
+function goHome() {
+  window.location.href = "HomePage.html";
+}
+
 init();
