@@ -73,7 +73,7 @@ function updateCategory(index) {
     }
   } else if (type == 'Metal') {
     if (metals[index] == 'Aluminum') {
-      window.location.href = "itemPage.html?item=" + metals[index];
+      window.location.href = "ItemPage.html?item=" + metals[index];
     } else {
       window.location.href = "underConstruction.html";
     }
