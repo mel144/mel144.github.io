@@ -12,7 +12,7 @@ body {
 	height: 530px;
 	width: 300px;
 	margin: 106px 31px;
-  background-color: rgb(149, 202, 64);
+  background-color: rgb(171, 217, 136);
 }
 
 .paw {
@@ -176,8 +176,10 @@ padding-left: 5px;
   width: 79%;
   margin-top: 10px;
   border-radius: 5px;
-  border-color: darkgreen;
+  border-color: white;
   border-width: 1px;
+  text-indent: 8px;
+  padding-top: 3px;
 }
 
 .smaller-text {
@@ -200,6 +202,20 @@ padding-left: 5px;
 .text:hover {
   cursor:default;
 }
+
+.searchText {
+  color: forestgreen;
+  font-size: 22px;
+  vertical-align: middle;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+  .searchText:hover {
+    cursor: pointer;
+    color: black;
+  }
+
 
 .info-table-6{
   margin-left: 23px;
@@ -270,8 +286,8 @@ padding-left: 5px;
 
   .btn:hover {
     background-color: forestgreen;
-    color: rgb(149, 202, 64);
-    border-color: rgb(149, 202, 64);
+    color: rgb(171, 217, 136);
+    border-color: rgb(171, 217, 136);
   }
 
 .padding {
@@ -280,7 +296,10 @@ padding-left: 5px;
 
 .search-result {
   display: block;
+  align-self: center;
   margin-top: 15px;
-  height: 100px; 
-  padding-left: 5px;
+  height: 110px; 
+  width: 260px;
+  padding-left: 10px;
+  border-radius: 5px;
 }

@@ -36,7 +36,7 @@ function init() {
       itemInfo = "This is extra information about Aluminum and how to recycle it. See the map below for locations.";
       displayItem(false);
     } else if (categoryType.get('item') == 'pizzabox') {
-      categoryType = new URLSearchParams("?item=Pizza Box");
+      categoryType = new URLSearchParams("?item=Cardboard Pizza Box");
       itemInfo = "This item is not recyclable. Pizza boxes that are tarnished with food, or any paper prduct that is stained with grease or food, are not recyclable.";
       displayItem(true);
     }
