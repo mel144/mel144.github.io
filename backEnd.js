@@ -45,19 +45,24 @@ function init() {
 
 function mapClick(currentPage) {
   if (currentPage === 'NearMe') {
+    var newHeight = "485px";
     var map = document.getElementById("nearMeMap");
     if (map != null) {
-      map.src = "images/map09.png";
+      map.style.height = newHeight;
+      document.getElementById("locationsText").hidden = true;
+      map.src = "images/map09V2.png";
       document.getElementById("tech").hidden = true;
       document.getElementById("directions").hidden = false;
       categoryType = new URLSearchParams("?type=nearMe2");
     }
   } else if (currentPage == 'directions') {
+    document.getElementById("locationsText").hidden = true;
     var map = document.getElementById("nearMeMap");
     if (map != null) {
+      map.style.height = newHeight;
       categoryType = new URLSearchParams("?type=nearMe3");
       document.getElementById("directions").hidden = true;
-      map.src = "images/directions.jpg";
+      map.src = "images/directionsV2.jpg";
     }
   }
 }
