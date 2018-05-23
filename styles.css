@@ -16,8 +16,9 @@ body {
 }
 
 .paw {
-  width: 40px; 
-  height: 40px;
+  margin-top: -1px;
+  width: 35px; 
+  height: 35px;
 }
 
   .paw:hover {
@@ -97,12 +98,20 @@ u:hover {
   font-style:italic; 
   color: black;
   font-size: small; 
-  padding-left: 25px;
+  margin-left: 11px;
 }
 
 .italic:hover {
   color: black;
   text-decoration: none;
+}
+
+#itemInfo {
+  font-style: italic;
+  color: black;
+  font-size: small;
+  margin-left: 20px;
+  width: 255px;
 }
 
 .map {
@@ -175,7 +184,7 @@ padding-left: 5px;
   align-items: center;
   width: 78%;
   margin-top: 10px;
-  border-radius: 5px;
+  border-radius: 7px;
   border-color: white;
   border-width: 1px;
   text-indent: 8px;
@@ -222,29 +231,35 @@ padding-left: 5px;
 }
 
 .category-image {
-  width: 110px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
+  border-radius: 7px;
+  border: 2px solid forestgreen;
+  background-color: white;
 }
 
-.cell:hover {
-  cursor: pointer;
-  border-color: black;
-}
-
-.cell-left:hover {
+.category-image:hover {
   cursor: pointer;
   border-color: black;
 }
 
 .cell-left {
   display: inline-block;
-  background-color: white;
-  border-radius: 5px;
-  border: 2px solid forestgreen;
   text-align: center;
   width: 120px;
   height: 120px;
   float: left;  
+}
+
+.categoryText {
+  color: forestgreen;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px white,
+    -1px 1px white,
+    -1px -1px white,
+    1px -1px white;
+
 }
 
 .row {
@@ -259,9 +274,6 @@ padding-left: 5px;
 
 .cell {
   display: inline-block;
-  background-color: white;
-  border-radius: 5px;
-  border: 2px solid forestgreen;
   text-align: center;
   width: 120px;
   height: 120px;
@@ -278,7 +290,7 @@ padding-left: 5px;
   font-size: 40px;
   color: white;
   background-color: rgb(42, 135, 49);
-  border-radius: 5px;
+  border-radius: 7px;
   border-color: white;
   border-width: 2px;
   vertical-align: middle;
@@ -314,5 +326,5 @@ padding-left: 5px;
   height: 110px; 
   width: 260px;
   padding-left: 10px;
-  border-radius: 5px;
+  border-radius: 7px;
 }
