@@ -135,6 +135,19 @@ function goBack() {
   if (categoryType.has('prev')) {
     var loc = categoryType.get('prev');
     window.location.href = loc.substring(1, loc.length - 1);
+  } else if (categoryType.has('item')) {
+    var item = categoryType.get('item');
+    console.log(item);
+    switch (item) {
+      case 'Cardboard Pizza Box':
+        window.location.href = "searchResults.html?type=search&text=pizza";
+        break;
+      case 'Aluminum':
+        window.location.href = "Category.html?type=Metal";
+        break;
+      default:
+        window.location.href = "HomePage.html";
+    }
   } else {
     var type = categoryType.get('type');
 
