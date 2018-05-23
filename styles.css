@@ -108,7 +108,7 @@ u:hover {
 .map {
   display:block;
   width: 100%;
-  height: 84%;
+  height: 485px;
 }
 
   
@@ -121,7 +121,7 @@ u:hover {
   width: 30px;
   height: 30px;
   position: absolute;
-  top: 330px;
+  top: 305px;
   left: 200px;
 }
 
@@ -134,7 +134,7 @@ u:hover {
   width: 275px;
   height: 40px;
   position: absolute;
-  top: 540px;
+  top: 530px;
   left: 45px;
 }
 
@@ -173,7 +173,7 @@ padding-left: 5px;
 
 .text-box {
   align-items: center;
-  width: 79%;
+  width: 78%;
   margin-top: 10px;
   border-radius: 5px;
   border-color: white;
@@ -185,7 +185,7 @@ padding-left: 5px;
 .smaller-text {
   color: white;
   font-size: 18px;
-  margin-left: 30px;
+  margin-left: 16px;
   margin-top: 5px;
   font-style:italic;
   font-weight: lighter;
@@ -288,6 +288,19 @@ padding-left: 5px;
     background-color: forestgreen;
     color: rgb(171, 217, 136);
     border-color: rgb(171, 217, 136);
+  }
+
+#start {
+  font-size: 30px;
+  border-width: 3px;
+  background-color: white;
+  color: forestgreen;
+}
+
+  #start:hover {
+    border-color: white;
+    background-color: forestgreen;
+    color: white;
   }
 
 .padding {

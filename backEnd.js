@@ -16,6 +16,11 @@ function init() {
     search(ev.keyCode);
   }
 
+  if (categoryType.has('text')) {
+    console.log(categoryType.get('text'));
+    document.getElementById("searchBar").value = categoryType.get('text');
+  }
+
   if (document.getElementById("directions") != null) {
     document.getElementById("directions").hidden = true;
   }
@@ -25,19 +30,24 @@ function init() {
 
     if (categoryType.get('type') == 'Uses') {
       displayCategory(uses);
+      document.getElementById("title").innerHTML = "Uses";
     } else if (categoryType.get('type') == 'Metal') {
       displayCategory(metals);
+      document.getElementById("title").innerHTML = "Metals";
     }
     else if (categoryType.get('type') == "Material") {
       displayCategory(materials);
+      document.getElementById("title").innerHTML = "Materials";
     }
   } else if (categoryType.has('item')) {
     if (categoryType.get('item') == 'Aluminum') {
+      document.getElementById("title").innerHTML = "Aluminum";
       itemInfo = "This is extra information about Aluminum and how to recycle it. See the map below for locations.";
       displayItem(false);
     } else if (categoryType.get('item') == 'pizzabox') {
+      document.getElementById("title").innerHTML = "Pizza Box";
       categoryType = new URLSearchParams("?item=Cardboard Pizza Box");
-      itemInfo = "This item is not recyclable. Pizza boxes that are tarnished with food, or any paper prduct that is stained with grease or food, are not recyclable.";
+      itemInfo = "This item is not recyclable. Pizza boxes that are tarnished with food, or any paper products that are stained with grease, are not recyclable.";
       displayItem(true);
     }
   } 
@@ -49,14 +59,12 @@ function mapClick(currentPage) {
     var map = document.getElementById("nearMeMap");
     if (map != null) {
       map.style.height = newHeight;
-      document.getElementById("locationsText").hidden = true;
       map.src = "images/map09V2.png";
       document.getElementById("tech").hidden = true;
       document.getElementById("directions").hidden = false;
       categoryType = new URLSearchParams("?type=nearMe2");
     }
   } else if (currentPage == 'directions') {
-    document.getElementById("locationsText").hidden = true;
     var map = document.getElementById("nearMeMap");
     if (map != null) {
       map.style.height = newHeight;
@@ -116,7 +124,7 @@ function search(char) {
       searchText.search("ardboard") != -1 ||
       searchText.search("ox") != -1) {
 
-      window.location.href = "searchResults.html?type=search";
+      window.location.href = "searchResults.html?type=search&text=" + searchText;
     } else {
       window.location.href = "underConstruction.html?prev='" + window.location.href + "'";
     }
