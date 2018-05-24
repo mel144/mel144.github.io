@@ -123,7 +123,8 @@ function search(char) {
     if (searchText.search("izza") != -1 ||
       searchText.search("ardboard") != -1 ||
       searchText.search("ox") != -1 ||
-      searchText.search("laze") != -1){
+      searchText.search("laze") != -1) {
+
       window.location.href = "searchResults.html?type=search&text=" + searchText;
     } else {
       window.location.href = "underConstruction.html?prev='" + window.location.href + "'";
