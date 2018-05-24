@@ -82,19 +82,19 @@ function updateCategory(index) {
     if (materials[index] == 'Metal') {
       window.location.href = "Category.html?type=" + materials[index];
     } else {
-      window.location.href = "underConstruction.html";
+      window.location.href = "underConstruction.html?prev='" + window.location.href + "'";
     }
   } else if (type == 'Metal') {
     if (metals[index] == 'Aluminum') {
       window.location.href = "ItemPage.html?item=" + metals[index];
     } else {
-      window.location.href = "underConstruction.html";
+      window.location.href = "underConstruction.html?prev='" + window.location.href + "'";
     }
   } else if (type == 'Uses') {
-    window.location.href = "underConstruction.html?type=" + uses[index];
+    window.location.href = "underConstruction.html?prev='" + window.location.href + "'";
   }
   else {
-    window.location.href = "underConstruction.html?type=" + type;
+    window.location.href = "underConstruction.html?prev='" + window.location.href + "'";
   }
 }
 
