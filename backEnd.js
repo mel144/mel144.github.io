@@ -207,7 +207,7 @@ function goBack() {
         mapClick('NearMe');
         break;
       case "item2":
-        window.location.href = "ItemPage.html?type=Aluminum";
+        window.location.href = "ItemPage.html?item=Aluminum";
         break;
       case "item3":
         mapClick('item');
