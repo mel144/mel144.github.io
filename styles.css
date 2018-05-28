@@ -12,7 +12,7 @@ body {
 	height: 530px;
 	width: 300px;
 	margin: 106px 31px;
-  background-color: rgb(171, 217, 136);
+  background-color: rgb(208, 247, 190);
 }
 
 .paw {
@@ -125,6 +125,18 @@ u:hover {
   cursor: default;
   }
 
+#item-Tech {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 471px;
+  left: 200px;
+}
+
+
+  #item-Tech:hover {
+    cursor: pointer;
+  }
 
 #tech {
   width: 30px;
@@ -147,6 +159,22 @@ u:hover {
   left: 45px;
 }
 
+  #directions:hover {
+    cursor: pointer;
+  }
+
+#item-Directions {
+  width: 275px;
+  height: 40px;
+  position: absolute;
+  top: 540px;
+  left: 40px;
+}
+
+#item-Directions:hover {
+  cursor: pointer;
+}
+
 #bigArrow {
   width: 40px;
   height: 40px;
@@ -159,17 +187,14 @@ u:hover {
     cursor: pointer;  
   }
 
-  #directions:hover {
-    cursor: pointer;
-  }
 
 .small-map {
   display: block;
   position: absolute;
   top: 337px;
-  left: 30px;
-  width: 300px;
-  height: 300px;
+  left: 31px;
+  width: 299px;
+  height: 299px;
 }
 
 .fun-facts {
@@ -255,11 +280,7 @@ padding-left: 5px;
   color: forestgreen;
   font-weight: bolder;
   letter-spacing: 1px;
-  text-shadow: 1px 1px white,
-    -1px 1px white,
-    -1px -1px white,
-    1px -1px white;
-
+  font-size: 18px;
 }
 
 .row {
@@ -298,8 +319,8 @@ padding-left: 5px;
 
   .btn:hover {
     background-color: forestgreen;
-    color: rgb(171, 217, 136);
-    border-color: rgb(171, 217, 136);
+    color: rgb(208, 247, 190);
+    border-color: rgb(208, 247, 190);
   }
 
 #start {

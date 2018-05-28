@@ -24,13 +24,16 @@
       <i class="material-icons" id="search-icon">search</i>
       <input type="text" placeholder="Search for an item to recycle" class="text-box" id="searchBar" onkeypress="search()">
     </div>
-    <div class="text" id="itemName" style="color: forestgreen; font-weight: bold; padding-top: 15px; margin-left: 20px;">
+    <div class="text" id="itemName" style="color: forestgreen; font-weight: bold; padding-top: 8px; margin-left: 20px;">
       Aluminum
     </div>
     <div id="itemInfo">
       Go U northwestern, break right through that line. With our colors flying we will cheer you all the time, u-ra-ra, go u northwestern fight for victory. Spread far the fame of our fair name, go northwestern win that game!
     </div>
-    <img src="images/map08.png" class="small-map" onclick="mapClick('item')" id="itemMap" />
+    
+    <img src="images/map08.png" class="small-map" id="itemMap" />
+    <div id="item-Tech" onclick="mapClick('item')"></div>
+    <div id="item-Directions" onclick="mapClick('item-Directions')"></div>
   </div>
 
   <script src="backEnd.js"></script>
