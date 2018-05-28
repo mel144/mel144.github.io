@@ -9,10 +9,10 @@ body {
 
 
 #screen {
-	height: 530px;
-	width: 300px;
-	margin: 106px 31px;
-  background-color: rgb(208, 247, 190);
+  height: 530px;
+  width: 300px;
+  margin: 106px 31px;
+  background-color: rgb(223, 249, 189);
 }
 
 .paw {
@@ -33,7 +33,7 @@ body {
   display: inline-block;
   color: white;
   font-size: 25px;
-  background-color: forestgreen;
+  background-color: rgb(18, 134, 21);
   width: 300px;
   height: 45px;
   align-content: space-around;
@@ -78,7 +78,7 @@ body {
 #search-icon {
   vertical-align: middle;
   margin-left: 16px;
-  color: forestgreen;
+  color: rgb(18, 134, 21);
 }
 
 .search {
@@ -92,7 +92,7 @@ body {
   }
 
 u:hover {
-  color:forestgreen;
+  color: rgb(18, 134, 21);
 }
 
 .italic {
@@ -239,7 +239,7 @@ padding-left: 5px;
 }
 
 .searchText {
-  color: forestgreen;
+  color: rgb(18, 134, 21);
   font-size: 22px;
   vertical-align: middle;
   margin-left: 10px;
@@ -260,7 +260,7 @@ padding-left: 5px;
   width: 100px;
   height: 100px;
   border-radius: 7px;
-  border: 2px solid forestgreen;
+  border: 2px solid rgb(18, 134, 21);
   background-color: white;
 }
 
@@ -278,7 +278,7 @@ padding-left: 5px;
 }
 
 .categoryText {
-  color: forestgreen;
+  color: rgb(18, 134, 21);
   font-weight: bolder;
   letter-spacing: 1px;
   font-size: 18px;
@@ -311,7 +311,7 @@ padding-left: 5px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 40px;
   color: white;
-  background-color: rgb(42, 135, 49);
+  background-color: rgb(18, 134, 21);
   border-radius: 7px;
   border-color: white;
   border-width: 2px;
@@ -319,21 +319,21 @@ padding-left: 5px;
 }
 
   .btn:hover {
-    background-color: forestgreen;
-    color: rgb(208, 247, 190);
-    border-color: rgb(208, 247, 190);
+    background-color: rgb(18, 134, 21);
+    color: rgb(223, 249, 189);
+    border-color: rgb(223, 249, 189);
   }
 
 #start {
   font-size: 30px;
   border-width: 3px;
   background-color: white;
-  color: forestgreen;
+  color: rgb(18, 134, 21);
 }
 
   #start:hover {
     border-color: white;
-    background-color: forestgreen;
+    background-color: rgb(18, 134, 21);
     color: white;
   }
 
